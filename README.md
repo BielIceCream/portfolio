@@ -2,7 +2,7 @@
 
 Peguei um template de portfólio que estava abandonado no GitHub. Pretendo atualizá-lo aos poucos, adicionando melhorias e opções de personalização para quem quiser utilizá-lo.
 
-**Portfolio URL:** [Acesse o site](COLOQUE_A_URL_AQUI)
+**Portfolio URL:** [Acesse o site](https://bielicecream.github.io/portfolio/) 
 
 ## Como publicar com GitHub Pages
 
