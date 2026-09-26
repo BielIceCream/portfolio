@@ -1,0 +1,173 @@
+/** Import Fonts **/
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url(../assets/fonts/RobotoMono.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(../assets/fonts/Rubik.ttf) format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+
+  /** Remove double-tap to zoom but allow other zoom gestures **/
+  touch-action: manipulation;
+
+  /** Disallow browser-synthesized font weights **/
+  font-synthesis: none;
+}
+
+html {
+  /* Gives smooth href jumps on page */
+  scroll-behavior: smooth;
+}
+
+body {
+  --transparent: rgba(255, 255, 255, 0);
+  --white-opaque: rgba(255, 255, 255, 0.8);
+  --grey-opaque: rgba(0, 0, 0, 0.2);
+  --white: #ffffff;
+  --lightgray: #e8e8e8;
+  --almostgray: #c7c7c7;
+  --gray: #9e9e9e;
+  --mediumgray: #757575;
+  --darkgray: #4f4f4f;
+  --darkergray: #3f3f3f;
+  --black: #292929;
+  --black-opaque: rgba(0, 0, 0, 0.4);
+  --lightblue: #b5e2fa;
+  --darkblue: #076ba2;
+  --darkerblue: #065682;
+  --lightred: #e8c8c8;
+  --red: #fcbcb8;
+
+  --body-font: Rubik, sans-serif;
+  --code-font: 'Roboto Mono', Consolas, 'Courier New', Courier, monospace;
+
+  color: var(--black);
+  font-family: var(--body-font);
+  font-weight: 400;
+  font-size: 1em;
+
+  margin: 0;
+}
+
+/* All headers require at least a font-weight of 500 for this site */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+/* All buttons and inputs should have the Rubik font-family */
+button {
+  font-family: var(--body-font);
+  cursor: pointer;
+}
+
+/***** GENERAL SITE STYLES *****/
+
+.site-container {
+  display: flex;
+  gap: 1em;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1710px;
+  padding: 0 1em;
+  position: relative;
+}
+
+.site-content {
+  flex: 0 3 45%;
+}
+
+.site-article {
+  margin-top: 3.5em;
+  padding-top: 1em;
+}
+
+.article-header {
+  margin-top: 0;
+  position: relative;
+}
+
+.article-header::before {
+  color: var(--mediumgray);
+  content: '#';
+  font-weight: 400;
+  inset-inline-start: -1.25em;
+  position: absolute;
+}
+
+.section-header {
+  align-items: flex-start;
+  column-gap: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 0.25em;
+}
+
+/* Class used for any regular text */
+.description {
+  color: var(--darkgray);
+}
+
+/* Class used for keywords primarily in text */
+.description--bold {
+  font-weight: 500;
+  color: var(--darkergray);
+}
+
+.description--bold .link:hover,
+.description--bold .link:focus-visible {
+  font-weight: 500;
+}
+
+.link {
+  color: var(--darkblue);
+}
+
+.link:hover,
+.link:focus-visible {
+  font-weight: 500;
+}
+
+.link:active {
+  color: var(--darkerblue);
+}
+
+[dir=rtl] .fa-dir-flip {
+  transform: scaleX(-1);
+}
+
+/***** MEDIA BREAK POINTS STYLES *****/
+
+@media (max-width: 1240px) {
+}
+
+@media (max-width: 840px) {
+  .site-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 685px;
+    padding-bottom: 0;
+    padding-inline: 2.4em 2em;
+    padding-top: 0;
+  }
+
+  .article-header::before {
+    inset-inline-start: -1em;
+  }
+}
+
+@media (max-width: 615px) {
+}
+
+@media (max-width: 415px) {
+}

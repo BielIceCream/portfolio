@@ -1,0 +1,61 @@
+/***** ABOUT ME STYLES *****/
+
+#about-me.site-article {
+  margin-top: 4.8em;
+}
+
+.about__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.about__header > .article-header {
+  margin-bottom: 0;
+}
+
+/* External Platform Links */
+.link-list {
+  display: flex;
+  gap: 0.3em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-list__item {
+  display: inline-block;
+}
+
+.link-list__link {
+  align-items: center;
+  border-radius: 5px;
+  color: var(--black);
+  display: inline-flex;
+  font-size: 1.75em;
+  height: 1.4em;
+  justify-content: center;
+  width: 1.4em;
+  text-decoration: none;
+  transition: 0.15s ease-in-out;
+}
+
+.link-list__link:hover,
+.link-list__link:focus-visible {
+  background-color: var(--lightblue);
+  box-shadow: 0px 0px 8px var(--lightblue);
+  -webkit-box-shadow: 0px 0px 8px var(--lightblue);
+}
+
+.link-list__link:active {
+  transform: scale(0.93);
+}
+
+/***** MEDIA BREAK POINTS STYLES *****/
+
+@media (max-width: 840px) {
+  #about-me.site-article {
+    margin-top: 0;
+  }
+}
